@@ -7,6 +7,6 @@ export default defineConfig({
     vite: {
         plugins: [tailwindcss()],
     },
-    site:'https://adolfin07.github.io',
+    site:'https://github.com/adolfin07',
     base:'TiimTec',
 });
