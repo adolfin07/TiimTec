@@ -1,22 +1,34 @@
 <section
-    class="w-screen h-screen flex flex-col-reverse items-center justify-center gap-10 p-5"
+    class="w-screen h-screen flex flex-col-reverse items-center justify-center gap-10 p-5
+ xl:flex-row-reverse lg:px-12 2xl:px-22"
+    id="main"
 >
-    <div class="w-[100%] observerRight">
-        <img src="/headerImg.jpg" alt="" />
+    <div
+        class="w-[100%] observerRight
+   md:h-[35%]
+   lg:flex lg:items-center lg:justify-center"
+    >
+        <img src="/headerImg.jpg" class="lg:w-190" alt="" />
     </div>
-    <div class="w-[100%] flex flex-col observerLeft">
-        <h2 class="text-5xl capitalize mb-3 text-[var(--dark-blue)]">
+    <div
+        class="w-[100%] flex flex-col observerLeft
+     md:h-[30%] md:justify-center lg:items-center xl:items-start"
+    >
+        <h2
+            class="text-5xl capitalize mb-3 text-[var(--dark-blue)]
+        md:text-6xl xl:text-7xl"
+        >
             software a tu medida
         </h2>
         <div class="flex gap-5 mb-1 text-[var(--light-blue)]">
-            <p>Tecnología para tu negocio</p>
-            <a href="#">Servicios</a>
+            <p class="md:text-2xl xl:text-3xl">Tecnología para tu negocio</p>
+            <a class="md:text-2xl xl:text-3xl" href="#">Servicios</a>
         </div>
         <div class="flex gap-5 mb-1 text-[var(--light-blue)]">
-            <p class="text-xs">
+            <p class="text-xs md:text-2xl xl:text-2xl">
                 <i class="fa-solid fa-phone"></i> +5539 90 4089
             </p>
-            <p class="text-xs">
+            <p class="text-xs md:text-2xl xl:text-2xl">
                 <i class="fa-solid fa-envelope"></i> tiimtecnologia@gmail.com
             </p>
         </div>

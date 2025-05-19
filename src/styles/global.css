@@ -13,4 +13,9 @@
 
 * {
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.toggle {
+    margin-top: 0;
 }

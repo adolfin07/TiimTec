@@ -78,3 +78,26 @@ const hiddenElementsUp = document.querySelectorAll('.observerUp');
 hiddenElementsUp.forEach((el) => observerUp.observe(el));
 
 
+let openBtn = document.querySelector("#openBtn");
+let navDiv = document.querySelector("#navbar-default");
+
+openBtn.addEventListener('click', () => {
+    navDiv.classList.toggle('toggle');
+});
+
+
+console.log(navDiv)
+
+//link 4 each
+
+let links = document.querySelectorAll(".link")
+
+links.forEach(link => {
+
+    link.addEventListener("click", () => {
+        navDiv.classList.toggle('toggle');
+    });
+
+});
+
+
