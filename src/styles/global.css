@@ -19,3 +19,17 @@
 .toggle {
     margin-top: 0;
 }
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-20rem * 5 - 1.5rem * 4));
+    }
+}
+
+.animate-scroll-left {
+    animation: scroll-left 40s linear infinite;
+}
