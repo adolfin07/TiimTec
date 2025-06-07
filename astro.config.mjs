@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from "@tailwindcss/vite";
 import dotenv from 'dotenv';
+import vercel from '@astrojs/vercel/serverless'; // 👈 Adaptador Vercel
 
 // Carga variables de entorno desde .env local
 dotenv.config();
@@ -9,11 +10,13 @@ dotenv.config();
 const LIVE_URL = "https://tiim-tec-adolfin07s-projects.vercel.app";
 
 export default defineConfig({
-    site: LIVE_URL, // usa la URL de producción aquí
+    site: LIVE_URL,
+    output: 'server', // 👈 Necesario para funciones tipo POST
+    // @ts-ignore
+    adapter: vercel(), // 👈 Aquí usas el adaptador
     vite: {
         plugins: [tailwindcss()],
         define: {
-            // Define variables para que estén disponibles en tu código cliente si necesitas
             'process.env.LIVE_URL': JSON.stringify(LIVE_URL),
         },
     },
