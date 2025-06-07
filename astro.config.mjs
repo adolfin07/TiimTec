@@ -1,16 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from "@tailwindcss/vite";
+import 'dotenv/config';
 
-const LIVE_URL = 'https://adolfin07.github.io/TiimTec';
+const LIVE_URL = "https://github.com/adolfin07/TiimTec";
 
 export default defineConfig({
-    site: LIVE_URL,
+    site: 'https://github.com/adolfin07',
     vite: {
         plugins: [tailwindcss()],
-    },
-    experimental: {
-        // @ts-ignore
-        assets: true,
     },
 });
